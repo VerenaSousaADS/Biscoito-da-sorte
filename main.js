@@ -11,10 +11,19 @@ console.log(randonPhrases)
 
 //Eventos
 
-btnOpen.addEventListener('click', handleClick)
-// btnOpenAgain.addEventListener('click', handleOpenAgainClick)
+btnOpen.addEventListener('click', handleOpenClick)
+btnOpenAgain.addEventListener('click', handleOpenAgainClick)
 
-function handleClick(event) {
+document.addEventListener('keydown', function(e) {
+    console.log(e.key)
+    if(e.key == 'Enter') {
+        handleOpenAgainClick()
+    }
+})
+
+console.log()
+
+function handleOpenClick(event) {
     event.preventDefault()
 
     toggleScreen()
@@ -26,7 +35,10 @@ function handleClick(event) {
 }
 
 
-
+function handleOpenAgainClick(){
+    toggleScreen()
+    handleOpenClick()
+}
 
 
 
