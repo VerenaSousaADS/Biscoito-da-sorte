@@ -7,7 +7,7 @@ const btnOpenAgain = document.querySelector('#btnOpenAgain')
 // let message = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", "Não é o que você fala que te define, mas sim o que você faz", "Sua força estará em permanecerem calmos e terem confiança"]
 // let randonPhrases = message[Math.floor((Math.random() * message.length))]
 
-console.log(randonPhrases.message)
+// console.log(randonPhrases.message)
 
 //Eventos
 
@@ -21,9 +21,13 @@ btnOpenAgain.addEventListener('click', handleOpenAgainClick)
 function handleOpenClick(event) {
     event.preventDefault()
 
-    toggleScreen()
+    
 
     let btnOpen = document.querySelector('#btnOpen')
+
+    if(btnOpen == onclick){
+        toggleScreen()
+    }
 
     console.log(btnOpen)
 
