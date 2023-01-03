@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 }
 
-body{
+body {
     background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
     font-size: 1.6rem;
 
@@ -19,11 +19,11 @@ body{
 
 
 
-.hide{
+.hide {
     display: none;
 }
 
-main{
+main {
     background: #FFFFFF;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
@@ -36,29 +36,29 @@ main{
 
 /* Screen1 */
 
-h1{
+h1 {
     font-family: 'Montserrat', sans-serif;
-    
+
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 29px;
 
     margin-bottom: 1.4rem;
-    
-    color: #34355B; 
+
+    color: #34355B;
 }
 
-p{
+p {
     font-family: 'DM Sans', sans-serif;
-  
+
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 20px;
-    
-    color: #34355B; 
+
+    color: #34355B;
 }
 
-#btnOpen{
+#btnOpen {
     background: none;
     border: none;
     cursor: pointer;
@@ -68,7 +68,7 @@ p{
 
 /* Screen2 */
 
-#btnOpenAgain{
+#btnOpenAgain {
     background-color: #FF9500;
     border-radius: .4rem;
     border: none;
@@ -78,7 +78,7 @@ p{
     gap: 1rem;
 
     font-family: 'DM Sans', sans-serif;
-   
+
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 20px;
@@ -86,10 +86,10 @@ p{
     text-align: center;
 
     color: #FFFFFF;
-    
+
 }
 
-.message{
+.message {
     background: #E4EDF1;
     box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
 
@@ -105,4 +105,27 @@ p{
     padding: 1rem;
     gap: 1rem;
 
+}
+
+
+/* ========= ANIMAÇÕES======================================================================== */
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -3,7 +3,7 @@
 const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 const btnOpen = document.querySelector('#btnOpen')
-// const btnOpenAgain = document.querySelector('#btnOpenAgain')
+const btnOpenAgain = document.querySelector('#btnOpenAgain')
 let message = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", "Não é o que você fala que te define, mas sim o que você faz", "Sua força estará em permanecerem calmos e terem confiança"]
 let randonPhrases = message[Math.floor((Math.random() * message.length))]
 
@@ -18,6 +18,7 @@ document.addEventListener('keydown', function(e) {
     console.log(e.key)
     if(e.key == 'Enter') {
         handleOpenAgainClick()
+        
     }
 })
 
@@ -37,7 +38,10 @@ function handleOpenClick(event) {
 
 function handleOpenAgainClick(){
     toggleScreen()
-    handleOpenClick()
+    
+    randonPhrases = message[Math.floor((Math.random() * message.length))]
+    // console.log(randonPhrases)
+    screen2.querySelector(".message").innerText = randonPhrases
 }
 
 
