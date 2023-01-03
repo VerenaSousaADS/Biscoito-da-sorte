@@ -4,7 +4,7 @@ const screen1 = document.querySelector('.screen1')
 const screen2 = document.querySelector('.screen2')
 const btnOpen = document.querySelector('#btnOpen')
 const btnOpenAgain = document.querySelector('#btnOpenAgain')
-let message = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", "Não é o que você fala que te define, mas sim o que você faz", "Sua força estará em permanecerem calmos e terem confiança"]
+let message = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", "Não é o que você fala que te define, mas sim o que você faz", "Sua força estará em permanecerem calmos e terem confiança", "A vida trará coisas boas se tiver paciência.","Demonstre amor e alegria em todas as oportunidades e verá que a paz nasce dentro de si.", "A juventude não é uma época da vida, é um estado de espírito.", "O bom-senso vale mais do que muito conhecimento."]
 let randonPhrases = message[Math.floor((Math.random() * message.length))]
 
 //Eventos
